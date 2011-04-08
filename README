@@ -1,1 +1,8 @@
 This will build gcc for Cortex MX based mcu:s like the stm32 for Ubuntu.
+
+To run the scripts to this:
+chmod 755 *.sh
+./setup.sh 
+
+Then you just have to wait...
+
