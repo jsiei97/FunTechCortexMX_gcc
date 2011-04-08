@@ -1,4 +1,5 @@
 This will build gcc for Cortex MX based mcu:s like the stm32 for Ubuntu.
+For more info http://fun-tech.se/stm32/
 
 To run the scripts to this:
 chmod 755 *.sh
