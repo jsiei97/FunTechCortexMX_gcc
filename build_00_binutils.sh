@@ -6,6 +6,12 @@ arch_url=http://ftp.gnu.org/gnu/binutils/binutils-2.20.tar.bz2
 arch_dir=binutils-2.20
 arch_name=binutils-2.20.tar.bz2
 
+cwd=`pwd`
+
+#First move the patch into the tools dir
+cp patch/binutils-2.20_tc-arm.c.patch $stm_dir_tools/
+did_it_work $? 
+
 cd $stm_dir_tools
 did_it_work $? 
 
@@ -25,14 +31,10 @@ fi
 tar -xvjf $arch_name
 did_it_work $? 
 
-#Get patch/patches...
+#Get patch/patches and add them...
 patch_file=binutils-2.20_tc-arm.c.patch
-if [ -f $patch_file ]; then
-    echo file exists - $patch_file
-else 
-    wget http://fun-tech.se/stm32/gcc/binutils-2.20_tc-arm.c.patch
-    did_it_work $? 
-fi
+cp $cwd/patch/$patch_file . 
+did_it_work $? 
 patch $arch_dir/gas/config/tc-arm.c $patch_file
 did_it_work $? 
 
