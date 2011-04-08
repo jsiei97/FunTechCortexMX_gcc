@@ -2,8 +2,15 @@ This will build gcc for Cortex MX based mcu:s like the stm32 for Ubuntu.
 For more info http://fun-tech.se/stm32/
 
 To run the scripts to this:
-chmod 755 *.sh
+chmod 755 setup.sh
 ./setup.sh 
 
-Then you just have to wait...
+Then you just have to wait a moment.
 
+If it did not work you can have a look in the build log 
+called something like log_stm32_build_2011-04-08_153242.log
+to find the problem.
+
+But if it did build in a correct way, 
+go ahead and build something funny with it.
+After all that is why I call it fun tech...
