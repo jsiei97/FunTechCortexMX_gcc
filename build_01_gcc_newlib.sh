@@ -45,6 +45,11 @@ did_it_work $?
              --without-headers  \
              --disable-shared  \
              --with-gnu-as  \
+             --with-float=soft \
+             --with-cpu=cortex-m3 \
+             --with-tune=cortex-m3 \
+             --with-mode=thumb \
+             --disable-libssp \
              --with-gnu-ld 
 did_it_work $? 
 
