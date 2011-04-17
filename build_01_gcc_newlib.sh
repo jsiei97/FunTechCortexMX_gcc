@@ -6,9 +6,10 @@ source include.sh
 ### GCC #########
 #################
 
-arch_url=ftp://ftp.sunet.se/pub/gnu/gcc/releases/gcc-4.4.4/gcc-4.4.4.tar.bz2
-arch_dir=gcc-4.4.4
-arch_name=gcc-4.4.4.tar.bz2
+ver_gcc=gcc-4.4.5
+arch_url=ftp://ftp.sunet.se/pub/gnu/gcc/releases/$ver_gcc/$ver_gcc.tar.bz2
+arch_dir=$ver_gcc
+arch_name=$ver_gcc.tar.bz2
 
 cd $stm_dir_tools
 did_it_work $? 
@@ -63,9 +64,11 @@ did_it_work $?
 ## NewLib #######
 #################
 
-arch_url=ftp://sources.redhat.com/pub/newlib/newlib-1.18.0.tar.gz
-arch_dir=newlib-1.18.0
-arch_name=newlib-1.18.0.tar.gz
+ver=newlib-1.19.0
+
+arch_url=ftp://sources.redhat.com/pub/newlib/$ver.tar.gz
+arch_dir=$ver
+arch_name=$ver.tar.gz
 
 cd $stm_dir_tools
 did_it_work $? 
@@ -146,7 +149,7 @@ did_it_work $?
 
 cd $stm_dir_tools
 did_it_work $? 
-cd gcc-4.4.4/build
+cd $ver_gcc/build
 did_it_work $? 
 make $PARALLEL CFLAGS="-mcpu=cortex-m3 -mthumb" \
      CXXFLAGS="-mcpu=cortex-m3 -mthumb" \
