@@ -4,6 +4,7 @@ source include.sh
 
 cat >> ~/.bashrc << EOF
 # STM32 BEGIN
+#Added by FunTechCortexMX_gcc - ${GIT_VERSION}
 #Multi process build 
 export PARALLEL=-j\`getconf _NPROCESSORS_ONLN\`
 
@@ -18,6 +19,7 @@ did_it_work $?
 
 cat > $stm_dir_bin/stm32_setup.sh << EOF
 #Autogen do not edit...
+#Created by FunTechCortexMX_gcc - ${GIT_VERSION}
 export PATH=${TOOLPATH_STM32}/bin:\$PATH
 
 EOF

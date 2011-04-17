@@ -18,4 +18,6 @@ export TOOLPATH_STM32=$stm_dir_install
 export PATH=$TOOLPATH_STM32/bin:$PATH
 export PARALLEL=-j`getconf _NPROCESSORS_ONLN`
 
+#What version of this project are we using?
+export GIT_VERSION=`git describe --long --dirty`
 

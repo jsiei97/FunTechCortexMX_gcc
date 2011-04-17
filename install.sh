@@ -3,7 +3,7 @@
 source include.sh
 
 echo 
-echo `git describe --long --dirty`
+echo $GIT_VERSION
 echo 
 
 echo "Install some packages..."
