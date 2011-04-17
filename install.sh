@@ -2,6 +2,10 @@
 
 source include.sh
 
+echo 
+echo `git describe --long --dirty`
+echo 
+
 echo "Install some packages..."
 ./solve_dependencies.sh
 did_it_work $? 
