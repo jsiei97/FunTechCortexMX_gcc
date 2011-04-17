@@ -14,3 +14,13 @@ to find the problem.
 But if it did build in a correct way, 
 go ahead and build something funny with it.
 After all that is why I call it fun tech...
+
+
+-------------------------
+
+When we update the versions and have a test ok from FunTechCortexMX_test, 
+then we can add a tag with todays date. 
+Like this:
+git tag -a `date +'ver_%F'` -m 'binutils-2.21 gcc-4.4.5 newlib-1.19.0 gdb-7.2'
+git push --tags
+
