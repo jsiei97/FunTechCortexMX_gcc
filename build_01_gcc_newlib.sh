@@ -104,7 +104,10 @@ did_it_work $?
              --disable-shared 
 did_it_work $? 
 
+# Malloc issue:
+# Shall we use the --disable-newlib-supplied-syscalls flag?
 
+# Float issue:
 # http://gcc.gnu.org/gcc-4.4/changes.html
 # GCC now supports the VFPv3 variant with 16 double-precision 
 # registers with -mfpu=vfpv3-d16. The option -mfpu=vfp3 has been 
@@ -119,7 +122,8 @@ did_it_work $?
 # Using -mfloat-abi=hard generates code that is not ABI-compatible with 
 # other floating-point options. 
 
-#-mabi=aapcs \
+#-mabi=aapcs 
+
 
 make $PARALLEL CFLAGS_FOR_TARGET="-ffunction-sections \
                         -fdata-sections \
