@@ -98,7 +98,6 @@ did_it_work $?
 ../configure --target=arm-none-eabi  \
              --prefix=$TOOLPATH_STM32  \
              --enable-interwork  \
-             --disable-newlib-supplied-syscalls  \
              --with-gnu-ld  \
              --with-gnu-as  \
              --disable-shared 
