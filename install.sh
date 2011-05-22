@@ -10,10 +10,6 @@ echo "Install some packages..."
 ./solve_dependencies.sh
 did_it_work $? 
 
-echo "Create the work dirs"
-./create_dirs.sh
-did_it_work $? 
-
 echo "Build binutils"
 ./build_00_binutils.sh
 did_it_work $? 
