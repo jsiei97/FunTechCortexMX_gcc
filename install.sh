@@ -4,6 +4,7 @@ source include.sh
 
 echo 
 echo $GIT_VERSION
+echo "Executed by user: "$USER
 echo 
 
 echo "Install some packages..."

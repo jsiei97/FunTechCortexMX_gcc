@@ -17,7 +17,7 @@ EOF
 did_it_work $? 
 
 
-cat > $stm_dir_bin/stm32_setup.sh << EOF
+cat > $stm_dir_bin/funtech_stm32_setup.sh << EOF
 #Autogen do not edit...
 #Created by FunTechCortexMX_gcc - ${GIT_VERSION}
 export PATH=${TOOLPATH_STM32}/bin:\$PATH
