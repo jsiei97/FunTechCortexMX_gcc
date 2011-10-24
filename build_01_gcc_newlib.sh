@@ -122,6 +122,7 @@ did_it_work $?
 # other floating-point options. 
 
 #-mabi=aapcs 
+# gcc 4.4.6 use -mfix-cortex-m3-ldrd ?
 
 
 make $PARALLEL CFLAGS_FOR_TARGET="-ffunction-sections \
