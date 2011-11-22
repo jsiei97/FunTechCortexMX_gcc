@@ -125,6 +125,7 @@ did_it_work $?
 # gcc 4.4.6 use -mfix-cortex-m3-ldrd ?
 
 
+#-DREENTRANT_SYSCALLS_PROVIDED \
 make $PARALLEL CFLAGS_FOR_TARGET="-ffunction-sections \
                         -fdata-sections \
                         -DPREFER_SIZE_OVER_SPEED \
