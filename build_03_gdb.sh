@@ -5,10 +5,10 @@ source include.sh
 #################
 ### gdb #########
 #################
-gdb_ver=7.2
-arch_url=http://ftp.gnu.org/gnu/gdb/gdb-$gdb_ver.tar.bz2
+gdb_ver=7.3
+arch_url=http://ftp.gnu.org/gnu/gdb/gdb-7.3a.tar.bz2
 arch_dir=gdb-$gdb_ver
-arch_name=gdb-$gdb_ver.tar.bz2
+arch_name=gdb-7.3a.tar.bz2
 
 cd $stm_dir_tools
 did_it_work $? 
