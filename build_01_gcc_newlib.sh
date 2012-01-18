@@ -52,7 +52,7 @@ did_it_work $?
              --with-mode=thumb \
              --disable-libssp \
              --with-gnu-ld \
-	     --with-system-zlib 
+             --with-system-zlib 
 did_it_work $? 
 
 make $PARALLEL all-gcc 
@@ -127,9 +127,9 @@ did_it_work $?
 
 
 #-DREENTRANT_SYSCALLS_PROVIDED \
+#--disable-newlib-supplied-syscalls \
 make $PARALLEL CFLAGS_FOR_TARGET="-ffunction-sections \
                         -fdata-sections \
-                        --disable-newlib-supplied-syscalls \
                         -DPREFER_SIZE_OVER_SPEED \
                         -D__OPTIMIZE_SIZE__ \
                         -Os \
