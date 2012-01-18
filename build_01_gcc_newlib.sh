@@ -128,6 +128,7 @@ did_it_work $?
 #-DREENTRANT_SYSCALLS_PROVIDED \
 make $PARALLEL CFLAGS_FOR_TARGET="-ffunction-sections \
                         -fdata-sections \
+                        --disable-newlib-supplied-syscalls \
                         -DPREFER_SIZE_OVER_SPEED \
                         -D__OPTIMIZE_SIZE__ \
                         -Os \
