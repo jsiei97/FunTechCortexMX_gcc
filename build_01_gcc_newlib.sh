@@ -6,7 +6,7 @@ source include.sh
 ### GCC #########
 #################
 
-ver_gcc=gcc-4.4.5
+ver_gcc=gcc-4.6.2
 arch_url=ftp://ftp.sunet.se/pub/gnu/gcc/releases/$ver_gcc/$ver_gcc.tar.bz2
 arch_dir=$ver_gcc
 arch_name=$ver_gcc.tar.bz2
@@ -51,7 +51,8 @@ did_it_work $?
              --with-tune=cortex-m3 \
              --with-mode=thumb \
              --disable-libssp \
-             --with-gnu-ld 
+             --with-gnu-ld \
+	     --with-system-zlib 
 did_it_work $? 
 
 make $PARALLEL all-gcc 
@@ -64,7 +65,7 @@ did_it_work $?
 ## NewLib #######
 #################
 
-ver=newlib-1.19.0
+ver=newlib-1.20.0
 
 arch_url=ftp://sources.redhat.com/pub/newlib/$ver.tar.gz
 arch_dir=$ver

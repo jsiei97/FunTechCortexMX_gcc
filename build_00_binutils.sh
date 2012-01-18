@@ -2,7 +2,7 @@
 
 source include.sh
 
-ver=binutils-2.21
+ver=binutils-2.22
 
 arch_url=http://ftp.gnu.org/gnu/binutils/$ver.tar.bz2
 arch_dir=$ver

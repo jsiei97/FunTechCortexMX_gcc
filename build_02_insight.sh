@@ -6,10 +6,10 @@ source include.sh
 ### insight #####
 #################
 
-arch_url=ftp://sourceware.org/pub/insight/releases/insight-6.8-1.tar.bz2
-arch_dir=insight-6.8-1
-arch_name=insight-6.8-1.tar.bz2
-gdb_ver=6.8
+arch_url=ftp://sourceware.org/pub/insight/releases/insight-6.8a.tar.bz2
+arch_dir=insight-6.8
+arch_name=insight-6.8a.tar.bz2
+gdb_ver=7.3
 
 cd $stm_dir_tools
 did_it_work $? 
