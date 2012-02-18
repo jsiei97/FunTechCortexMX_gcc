@@ -101,7 +101,8 @@ did_it_work $?
              --enable-interwork  \
              --with-gnu-ld  \
              --with-gnu-as  \
-             --disable-shared 
+             --disable-shared \
+             --disable-newlib-supplied-syscalls
 did_it_work $? 
 
 # Malloc issue:
