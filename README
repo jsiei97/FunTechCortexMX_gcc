@@ -1,3 +1,13 @@
+Note 2016-02-13:
+This project is now a legacy project left here for reference only.
+Please use linaro gcc for production useage.
+
+* http://www.linaro.org/downloads/
+* https://github.com/jsiei97/FT_Tools/blob/master/install.linaro.baremetal.sh
+
+------------------------------
+
+
 This will build gcc for Cortex MX based mcu:s like the stm32 for Ubuntu.
 For more info http://fun-tech.se/stm32/
 
